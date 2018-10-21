@@ -4,7 +4,7 @@
   display:inline-block;
   background:#007bff;
   color: white;
-  width:30%;
+  width:45%;
   padding:12px;
   margin: 5px;
   border-radius:8px;
@@ -13,4 +13,13 @@
 }
 .skill:nth-child(even) {
   background:#28a745;
+}
+
+@media (min-width:468px) {
+  .skill {
+    width:30%;
+  }
+}
+#portfolio.card {
+  width:90%;
 }
