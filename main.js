@@ -9,7 +9,7 @@ changeToDarkTheme = function() {
   $("p").css("color", "white");
   $(".modal-content").css("background", "rgb(10,10,10)");
   $(".modal-content").css("color", "white");
-  return theme = "dark";
+  theme = "dark";
 };
 
 changeToLightTheme = function() {
@@ -19,7 +19,7 @@ changeToLightTheme = function() {
   $(".modal-content").css("background", "white");
   $(".modal-content").css("color", "#212529");
   $("body").css("color", "unset");
-  return theme = "light";
+  theme = "light";
 };
 
 $("#darkMode").parent().on("click touchsstart", function() {
