@@ -14,11 +14,18 @@
 .skill:nth-child(even) {
   background:#28a745;
 }
+body {
+  overflow-x:none;
+}
 
 @media (min-width:468px) {
   .skill {
     width:30%;
   }
+}
+
+@media (min-width:768px) {
+
 }
 #portfolio.card {
   width:90%;
