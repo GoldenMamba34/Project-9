@@ -1,5 +1,4 @@
 theme = "light"
-
 changeToDarkTheme = ->
   $("body").css("background", "#242A30")
   $("body").css("color", "white")
@@ -9,6 +8,8 @@ changeToDarkTheme = ->
   $(".modal-content").css("color", "white")
   $("#darkMode").parent().addClass("active")
   $("#whiteMode").parent().removeClass("active")
+  $(".card").css("background", "#1c2126")
+
 
   theme = "dark"
 changeToLightTheme = ->
@@ -18,7 +19,7 @@ changeToLightTheme = ->
   $(".modal-content").css("background", "white")
   $(".modal-content").css("color", "#212529")
   $("body").css("color", "unset")
-
+  $(".card").css("background", "white")
   theme = "light"
 
 $("#darkMode").parent().on("click touchsstart", ->

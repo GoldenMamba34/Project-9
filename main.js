@@ -11,6 +11,7 @@ changeToDarkTheme = function() {
   $(".modal-content").css("color", "white");
   $("#darkMode").parent().addClass("active");
   $("#whiteMode").parent().removeClass("active");
+  $(".card").css("background", "#1c2126");
   return theme = "dark";
 };
 
@@ -21,6 +22,7 @@ changeToLightTheme = function() {
   $(".modal-content").css("background", "white");
   $(".modal-content").css("color", "#212529");
   $("body").css("color", "unset");
+  $(".card").css("background", "white");
   return theme = "light";
 };
 
