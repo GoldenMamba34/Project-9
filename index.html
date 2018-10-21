@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
+<!-- https://goldenmamba34.github.io/Project-9/ -->
 
 <head>
   <meta charset="utf-8">
@@ -23,7 +24,7 @@
 </head>
 
 
-<body data-spy="scroll" data-target="#navbarNav" data-offset="30">
+<body data-spy="scroll" data-target="#navbarNav" data-offset="10">
 
 
 
@@ -50,13 +51,46 @@
     </div>
   </nav>
 
+  <!-- Modal -->
+  <div class="modal fade" id="settings" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Settings</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+<h1>Theme</h1>
+<div class="btn-group btn-group-toggle" data-toggle="buttons">
+  <label class="btn btn-secondary active">
+    <input type="radio" name="options" id="lightMode" autocomplete="off" checked>Light
+  </label>
+  <label class="btn btn-secondary">
+    <input type="radio" name="options" id="darkMode" autocomplete="off">Dark
+  </label>
+</div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button type="button" class="btn btn-primary float-right mr-3" data-toggle="modal" data-target="#settings">Settings</button>
+
+
 
   <div class="container-fluid">
 
     <div class="pb-3 container-fluid" id="aboutMe">
       <h1 class="display-4 my-4">About Me</h1>
       <img src="SnowLeopard.jpg" class="rounded-circle mx-auto d-block mb-3" alt="Golden Mamba">
-      <p class="my-2 mx-auto d-block d-lg-inline-block">Hello, I am Golden Mamba. I am a genetically engineered snow leopard. I live in the mountains of Massachusetts. I decided that I wanted to code so that I could write software to help manage my team
+      <p class="my-2 mx-auto d-block d-lg-inline-block">Hello, I am Golden Mamba. I am a genetically engineered snow leopard. I live in the mountains of Massachusetts. I decided that I wanted to code so that I could write software to help manage my
+        team
         of fellow snow leopards. I am currently learning web development on Treehouse. I want to be a billionaire which probably is not going to happen, but if it does it'll be awesome. I'm also learning React because it is like a hamburger you
         stack up different components, aka the bread, the meat and the bun, to make a wonderful web application, aka the sandwich. That's enough for this bio so just remember nothing is real.</p>
 
@@ -73,7 +107,7 @@
 
       <h1 class="display-4 my-4">My Skills</h1>
 
-      <div id="skills" class="d-flex text-center flex-wrap">
+      <div class="text-center">
         <div class="skill">HTML</div>
         <div class="skill">CSS</div>
         <div class="skill">Javascript</div>
@@ -142,10 +176,10 @@
           <label for="exampleFormControlTextarea1">Message</label>
           <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
         </div>
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Send</button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#thankYou">Send</button>
 
         <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="thankYou" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
               <div class="modal-header">
